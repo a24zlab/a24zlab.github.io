@@ -8174,6 +8174,13 @@
   dependencies:
     "escape-goat" "^2.0.0"
 
+"push-dir@^0.4.1":
+  "integrity" "sha1-KUgerNnCEGu7eUHbbTfRIqBx7LQ="
+  "resolved" "https://registry.npmmirror.com/push-dir/download/push-dir-0.4.1.tgz"
+  "version" "0.4.1"
+  dependencies:
+    "minimist" "^1.2.0"
+
 "q@^1.1.2":
   "integrity" "sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc="
   "resolved" "https://registry.npmjs.org/q/-/q-1.5.1.tgz"
