@@ -21,4 +21,8 @@ yarn-error.log*
 /.nuxt
 /packages/**/dist
 
+# add at 2022:
 .idea/
+
+# deploy to github pages:
+dist/

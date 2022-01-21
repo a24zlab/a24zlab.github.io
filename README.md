@@ -13,13 +13,10 @@
 > env:
 
 ```ruby
-
 - node: v16.13.1+
 - npm: 8.1.2
 
-
 ```
-
 
 ### Deployment
 
@@ -29,7 +26,10 @@
   `npm start`
 - Navigate to  [http://localhost:8000](http://localhost:8000)
 
-### License
+> deploy to Github Pages:
 
-This project is licensed under the terms of
-the [MIT license](https://github.com/ilhammeidi/boss-lite/blob/master/LICENSE.txt).
+```bash
+# then check dist/
+npm run generate
+
+```
