@@ -33,3 +33,12 @@
 npm run generate
 
 ```
+
+> deploy:
+
+```bash 
+# upload local:
+npm run deploy
+
+```
+
