@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+#      - name: Get yarn cache
+#        id: yarn-cache
+#        run: echo "::set-output name=dir::$(yarn cache dir)"
 
 #      - name: Cache dependencies
 #        uses: actions/cache@v2
@@ -44,6 +44,7 @@ jobs:
 
       # build:
       - name: npm install, build, and test
+        uses: actions/checkout@v2
         run: |
           npm install
           npm run generate
