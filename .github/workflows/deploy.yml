@@ -12,26 +12,13 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-#      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       # node env:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-
-#      - name: Get yarn cache
-#        id: yarn-cache
-#        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-#      - name: Cache dependencies
-#        uses: actions/cache@v2
-#        with:
-#          path: ${{ steps.yarn-cache.outputs.dir }}
-#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-#          restore-keys: |
-#            ${{ runner.os }}-yarn-
-
+          node-version: '16'
 
       # ref: https://github.com/actions/cache/blob/main/examples.md#node---npm
       - name: Cache dependencies
@@ -43,9 +30,7 @@ jobs:
             ${{ runner.os }}-node-
 
       # build:
-      - name: npm install, build, and test
-        uses: actions/checkout@v2
-        run: |
+      - run: |
           npm install
           npm run generate
 
