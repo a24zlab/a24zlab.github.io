@@ -32,7 +32,7 @@ jobs:
       # build:
       - run: |
           npm install
-          npm run generate
+          npm run generate:gh
 
       # build:
       # - run: yarn install --frozen-lockfile
